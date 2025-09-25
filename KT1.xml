@@ -43,11 +43,11 @@
       <date>2025-01-03</date>
       <time>11:00-12:00</time>
     </lesson>
-    <lesson no="4" complex="S003">
+    <lesson no="4" complex="S002">
       <date>2025-01-04</date>
       <time>16:00-17:00</time>
     </lesson>
-    <lesson no="5" complex="S002">
+    <lesson no="5" complex="S003">
       <date>2025-01-05</date>
       <time>17:00-18:00</time>
     </lesson>

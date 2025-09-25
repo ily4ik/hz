@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE timeTable [
+<!ELEMENT timeTable (complexes, lessons)>
+<!ELEMENT complexes (complex+)>
+<!ELEMENT lessons (lesson+)>
+<!ELEMENT complex (name, address)>
+<!ELEMENT lesson (date, time)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT address (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT time (#PCDATA)>
+<!ATTLIST complex code ID #REQUIRED>
+<!ATTLIST lesson no CDATA #REQUIRED>
+<!ATTLIST lesson complex IDREF #REQUIRED>
+]>
+
+<timeTable>
+  <complexes>
+    <complex code="S001">
+      <name>Спортивный комплекс</name>
+      <address>ул. ХЗ, д. 5</address>
+    </complex>
+    <complex code="S002">
+      <name>Фитнес центр</name>
+      <address>пр. ХЗ, д. 6</address>
+    </complex>
+    <complex code="S003">
+      <name>Бассейн</name>
+      <address>ул. ХЗ, д. 7</address>
+    </complex>
+  </complexes>
+  
+  <lessons>
+    <lesson no="1" complex="S001">
+      <date>2025-01-01</date>
+      <time>06:00-07:00</time>
+    </lesson>
+    <lesson no="2" complex="S002">
+      <date>2025-01-02</date>
+      <time>09:00-10:00</time>
+    </lesson>
+    <lesson no="3" complex="S001">
+      <date>2025-01-03</date>
+      <time>11:00-12:00</time>
+    </lesson>
+    <lesson no="4" complex="S003">
+      <date>2025-01-04</date>
+      <time>16:00-17:00</time>
+    </lesson>
+    <lesson no="5" complex="S002">
+      <date>2025-01-05</date>
+      <time>17:00-18:00</time>
+    </lesson>
+  </lessons>
+</timeTable>
